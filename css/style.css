@@ -1,0 +1,468 @@
+/* body {background-color: #3b96ce;} */
+:root {
+    /* --color-bg-dark: #361999;
+    --color-bg-light: rgb(122, 255, 242); */
+    --color-bg-dark: rgba(33, 148, 242, 0.7);
+    --color-bg-light: white;
+    --1:#ffffff;
+    --2:#eae9ea;
+    --3:#fcddc4;
+    --4:#c7802e;
+    --5:#72415d;
+    --6:#555554;
+}
+html {
+    scroll-behavior: smooth;
+  }
+body {
+background: var(--6);
+align-items: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  background-position: center;
+color: var(--6);
+    /* display: flex; */
+    font-family: Helvetica, sans-serif; 
+    /* font-size: 24px; */
+    /* height: 100vh; */
+    justify-content: center;
+    /* overflow: hidden; */
+    width: 100vw;
+}
+
+
+h1    { color: blue;}
+p    {color: red;}
+table th  {border: 1px solid black;}
+table td{text-align: center; border: 1px solid rgba(255, 255, 255, 0.919);}
+table td , table th {border-collapse:collapse ;}
+table {margin: 10px auto;border-collapse:collapse ;}
+button, button:hover, button:focus, button:active  {background-color: transparent ;border: none;}
+
+div#seachIcon{
+    border: 3px solid var(--6);
+    background-color:var(--6);
+    display: flex;
+    background-attachment: fixed;
+    background-position: center;
+    border-radius: 25px;
+    float: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+    left: auto;
+ 
+}
+
+#seachIconViev {
+    border-radius: 22px;
+    background: var(--3);
+    
+    padding: 0px;
+    width: 289px;
+    height: 60px;
+
+  }
+#calendarySchow{
+    border-radius: 25px;
+    background: var(--5);
+    border: 3px solid var(--4);
+    padding: 5px;
+    height: 150px;
+    position: relative;
+    width:180px;
+    z-index: 1;
+    color:var(--4);
+}
+.datainut_calendary > *{
+    width:140px;
+    color: var(--2);
+    font-size: medium;
+    
+
+}
+#dataSearchonoff{
+    border: solid var(--1);
+    background-color: var(--3);
+    z-index: 2;
+}
+
+div#seachIconViev{
+    border: 3px solid var(--2);
+    background-color:var(--2);
+    padding: 3px 10px 5px 12px;
+    position: relative;
+    height: 50px;
+max-height: 50px;
+margin: auto;
+
+}
+
+#szukaj{
+    border: 3px solid var(--4);
+    background-color:transparent;
+    padding: 5px;
+    width: 240px;
+    height: 47px;
+    border-radius: 25px;
+    font-size:20px;
+    /* margin: 0 auto; */
+    width: 100%;
+    max-width: 300px;
+   min-width: 200px;
+    position: relative;
+    color: var(--2);
+    
+
+}
+
+table#orderList > tbody{
+    border: 3px solid var(--5);
+    background-color: var(--2);;
+}
+table#orderList td > *{
+    margin: auto;
+
+}
+table#orderList td {
+    height:50px ;
+}
+table#orderList {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+    left: auto;
+
+}
+table#orderList tr, table#order > tbody, table#orderList > thead{
+    width: 100%;
+
+}
+table#orderList td, table#orderList th{
+    width: auto;
+    font-size: large;
+       border: none;
+    background-color: var(--2);;
+}
+table#orderList td:first-child, table#orderList th:first-child{
+    width: 10%;
+}
+#viewOrder {
+    margin: 0 auto;
+    width: 100%;
+}
+div#nazwafolder{
+    border-radius: 25px;
+    background: rgba(33, 148, 242);
+
+}
+
+table#order > tbody{
+    border: 3px solid var(--5);
+    background-color:  hsl(0, 0%, 99%);
+
+}
+table#order td > *{
+    margin: auto;
+    align-items: center;
+
+}
+/* table#order td {
+    height:66px ;
+} */
+table#order {
+    margin: 0 auto;
+    width: 100%;
+    /* margin-bottom:100PX; */
+    max-width: 800px;
+    left: auto;
+}
+table#order tr, table#order > tbody, table#order > thead{
+    width: 100%;
+}
+table#order td, table#order th{
+    /* width: 30%; */
+    font-size: large;
+    text-align:center;
+}
+table#order td:first-child, table#order th:first-child{
+    width: 10%;
+}
+#viewOrder {
+    margin: 0 auto;
+    width: 100%;
+}
+.brand-logo{
+    left: 10px;
+    position: relative;
+}
+#szukaj:focus +#labelSzukaj,
+#szukaj:not(:placeholder-shown) + #labelSzukaj {
+    left: 100%;
+    opacity: 0;
+}
+#labelSzukaj{
+    color:#fcddc4;
+    transition: left 0.2s ease-in, opacity 0.2s ease-in;
+    transform: translateY(-50%);
+    cursor: text;
+    font-style: italic;
+    font-size: xx-large;
+    position: absolute;
+    left: auto; 
+margin-top: 24px;
+margin-left: 26px;
+}
+#lupa{
+    cursor: pointer;
+    position: relative;
+    left: auto; 
+top: -18px;
+
+/* left:42%; */
+}
+
+
+.daneDoskanu4{
+    background-color:  var(--6);
+    color: var(--1);
+   
+}
+.daneDoskanu3 {
+    width: 40px;
+    background-color:  var(--5);
+    padding:0px;
+    min-width: none;
+    color: var(--1);
+    border-top: solid var(--5);
+}
+.daneDoskanu2 > *{
+    width: 30px;
+    background-color:  var(--4);
+    padding:0px;
+    min-width: none;
+    color: var(--1);
+    border-top: solid var(--5);
+}
+.daneDoskanu > *{
+  
+    background-color:  var(--3);
+    padding:0px;
+    min-width: none;
+    color: var(--5);
+    border: var(--5);
+}
+table#order th{
+    background-color:  var(--2);
+    border: 3px solid var(--5);
+}
+#anulowanieZamówienia{
+    color:red;
+    border:6px dotted red;
+    margin: 10px auto;
+    width: 96%;
+    padding: 5px;
+}
+.imputScanNrParti{
+    border: 0px solid rgba(255, 255, 255, 0.919);
+    border-radius: 0px 0px 55px 55px;
+    background-color: transparent;
+    color: var(--2);
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+.imputScanNrParti:focus{
+    border: none;
+    border-bottom: 1px solid var(--5);
+    box-shadow: 0 1px 0 0 var(--5);
+    height:80px;
+    color: var(--3);
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+
+}
+
+.scanLabel{
+position: relative;
+    color:var(--2);
+    left: 30px;
+    top:5px;
+    font-size:22px;
+    cursor: text;
+    left: 33px;
+    font-family: 'Kanit', sans-serif;
+  
+    top: 50%;
+    transform: translateY(-50%);
+    transition: left 0.2s ease-in, opacity 0.2s ease-in;
+}
+.scanLabel:focus{
+color: var(--6);
+
+}
+.imputScanNrParti:focus + .scanlabel,
+.imputScanNrParti:not(:placeholder-shown) + .scanlabel{
+    /* color: var(--2);
+    border:none; */
+    left: 100%;
+    opacity: 0;
+}
+.inputToNrPartii{
+    color: var(--2);
+}
+.inputToNrPartii:focus{
+    color: var(--3);
+    border:solid var(--3);
+    background-color: var(--2);
+    height: 80px;
+    font-size: x-large;
+    border: 0px;
+    border-bottom: 1px solid var(--1);
+    box-shadow: 0 1px 0 0 var(--1);
+    
+
+}
+
+#autoScan_AllInOneDIV{
+    background-color: var(--5);
+    border: 0px 2px 2px 2px solid var(--4);
+    margin: 0 auto;
+    width: 100%;
+    /* margin-bottom:100PX; */
+    max-width: 900px;
+    left: 0px;
+    right: 0px;
+    padding: 5px;
+    bottom: 0px;
+    position: fixed;
+    z-index: 20;
+}
+#autoScan_AllInOneINPUT{
+    background-color: var(--5);
+    width: 100%;
+    /* height: 40px; */
+    border: none;
+    font-size: x-large;
+    color: var(--3);
+    position: relative;
+    top:20px;
+    border: none;
+
+}
+#autoScan_AllInOneINPUT:focus{
+    background-color: var(--5);
+    /* width: 100%; */
+    height: 60px;
+    border-bottom: 2 px solid var(--4);
+    border-bottom: 1px solid var(--5);
+    box-shadow: 0 1px 0 0 var(--5);
+    font-size: x-large;
+    color: var(--3);
+    border-bottom: 1px solid var(--5);
+    box-shadow: none;
+    border: none;
+}
+#labelautoScan_AllInOneINPUT{
+  color: var(--3);
+    font-size:22px;
+    cursor: text; 
+   position:relative;  
+   top:-20px;
+   left:10px;  
+   /* margin-left: auto; */
+   height: 99%;
+   width: 100%;
+    transform: translateY(-50%);
+    transition: left 0.2s ease-in, opacity 0.2s ease-in;
+
+}
+#autoScan_AllInOneINPUT:focus +#labelautoScan_AllInOneINPUT,
+#autoScan_AllInOneINPUT:not(:placeholder-shown) +#labelautoScan_AllInOneINPUT
+{
+    left: 100%;
+    opacity: 0;
+    
+}
+#prelouderoo{
+    height: 100%;
+    width: 100%;
+    position: sticky; 
+    background-color: hsla(32, 62%, 48%, 0.8);
+     position: fixed; 
+    z-index: 35;
+    
+}
+#klepsydra{
+    max-width:300px;
+    min-width: 100px;
+    width: 30%;
+    height: auto;  
+    position: fixed; 
+    margin: auto;
+    top:35%;
+    left:35%;
+    z-index: 5;
+    margin-left: auto;
+   
+}
+.fixed_buton_on_auto_raport{
+    
+    width: 280px;
+    height:80px;  
+    position: relative; 
+    margin: auto;
+  
+    margin-left: auto;
+    border-radius: 0px 0px 40px 40px;
+    background-color: var(--4);
+    margin-bottom: 35px;
+    border: 3px solid var(--1);
+}
+@keyframes rotatee {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+  }
+  #klepsydra {
+    animation-name: rotatee;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+#autoEanDataTable{
+    width: 100%;
+    max-width: 800px;
+    background-color: var(--2);
+    border: 3px solid var(--5);
+    text-align: center;
+    border-collapse: collapse;
+    font-size: large;
+}
+#autoEanDataTable th {
+    border: 3px solid var(--5);
+    text-align: center;
+}
+@keyframes pojawianie {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+  }
+
+.imputScanNrParti:focus  {
+    background: var(--1) !important;
+    color: var(--6) !important;
+    border-radius: 4px !important;
+    border: 3px solid var(--4) !important;
+    box-shadow: none !important;
+}
+
+#autoScan_AllInOneINPUT:focus{
+    background: var(--1);
+    color: var(--4);
+}
+.scanLabel{
+    color: var(--1) !important;
+}
